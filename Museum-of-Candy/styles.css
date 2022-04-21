@@ -1,0 +1,45 @@
+/* These are basically universal settings since everything is wrapped in the body tag */
+body{
+    background: #f5d9d5;
+    font-family: "Nunito", sans-serif;
+}
+
+.navbar.scrolled{
+    background: rgb(222,192,222, .5);
+    transition: ease-in .5s;
+    
+}
+
+/* Here i change the thickness of the font and the size */
+#mainNavbar{
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+#mainNavbar .nav-link{
+    color: white;
+}
+#mainNavbar .nav-link:hover{
+    color: #ea1c2c;
+}
+
+/* in addition i change the color of the site title */
+#mainNavbar .navbar-brand{
+    font-size: 1.5rem;
+    color: #ea1c2c;
+}
+
+#lolli{
+    transform: rotate(45deg);
+}
+.blurb h2{
+    color: #f498b8;
+    text-shadow: 3px 3px 2px #ea1c2c;
+}
+.blurb p{
+    color: #f498b8
+}
+
+
+
+
+

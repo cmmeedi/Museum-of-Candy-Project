@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:200,300,400,700"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Museum of Candy</title>
+  </head>
+
+  <body>
+    <main>
+    <!-- This will be the navbar and all the bootstrap classes associated with it -->
+    <nav id="mainNavbar" class="navbar fixed-top navbar-dark navbar-expand-md py-0">
+      <!-- The navbar title with a class to make it all uppercase -->
+      <a href="#" class="navbar-brand text-uppercase">candy</a>
+      <!-- The button for the link drawer -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navLinks"
+        aria-label="Toggle Links"
+      >
+        <!-- The icon on the button for the link drawer -->
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- The links within the navbar -->
+      <div class="collapse navbar-collapse" id="navLinks">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <!-- Setting this link to active to differentiate it from the others
+            letting the user know that it is the selected link -->
+            <a href="#Home" class="nav-link active text-uppercase">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#About" class="nav-link text-uppercase">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#Tickets" class="nav-link text-uppercase">Tickets</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- This is the section for the image and text rows where there is an image on the right side and text on the left "MUSEUM/OF/CANDY" -->
+
+    <!-- A fluid container is used as the section class and the padding is removed from the left and the right to make the container span across the whole entire width of the page -->
+    <section class="container-fluid px-0">
+      <!-- A row is created for the first part (Hand holding Donut) -->
+      <div class="row align-items-center">
+        <!-- then it is divided into two.  By using col-6 at large sizes and a full span on sizes under large under -->
+        <div class="col-lg-6">
+          <!-- The text is centered, and changed to all uppercase using "text-center" and "text-uppercase".  The text is not shown unless it is on a large screen and the margin on the top has been increased to accomodate for the text and the links clashing if it were less-->
+          <div
+            class="text-center text-uppercase d-none d-lg-block mt-5"
+          >
+          <!-- The header "Museum/of/candy" is split up with spans to be able to change the color of "/" in junction with the class "text-danger".  The size is increased using the class "display-5" along with being thinned out using the class "fw-lighter" -->
+            <h1 class="display-5 fw-lighter">
+              museum<span class="text-danger">/</span>of<span
+                class="text-danger"
+                >/</span
+              >candy
+            </h1>
+            <h1 class="display-5 fw-lighter">
+              museum<span class="text-danger">/</span>of<span
+                class="text-danger"
+                >/</span
+              >candy
+            </h1>
+            <h1 class="display-5 fw-lighter">
+              museum<span class="text-danger">/</span>of<span
+                class="text-danger"
+                >/</span
+              >candy
+            </h1>
+            <h1 class="display-5 fw-lighter">
+              museum<span class="text-danger">/</span>of<span
+                class="text-danger"
+                >/</span
+              >candy
+            </h1>
+            <h1 class="display-5 fw-lighter">
+              museum<span class="text-danger">/</span>of<span
+                class="text-danger"
+                >/</span
+              >candy
+            </h1>
+            <h1 class="display-5 fw-lighter">
+              museum<span class="text-danger">/</span>of<span
+                class="text-danger"
+                >/</span
+              >candy
+            </h1>
+            <h1 class="display-5 fw-lighter">
+              museum<span class="text-danger">/</span>of<span
+                class="text-danger"
+                >/</span
+              >candy
+            </h1>
+          </div>
+        </div>
+        <!-- The second half of the container using col-lg-6 -->
+        <div class="col-lg-6">
+          <!-- Using a "img-fluid" class to make the image responsive -->
+          <img
+            class="img-fluid"
+            src="/Bootstrap/Museum-of-Candy/Assets/hand2.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- The following section is the meat and potatoes of the site.  It displays a picture with text beside it similar to the above section but the text within this section is more descriptive and in depth. -->
+
+    <!-- Using a "container-fluid" class with no padding on the left and right to make the rows span the width of the whole page -->
+    <section class="container-fluid px-0">
+      <!-- The content within the row has to be aligned vertically using the "align-items-center" class and a "mb-md-5" class to add margin-bottom on screens smaller then medium. -->
+      <div class="row align-items-center mb-md-5">
+        <!-- This is the left column with an order of 2 when being viewed on small screens and then the order reverted back to 1 when viewed on larger screens -->
+        <div class="col-md-6 order-2 order-md-1">
+          <!-- again using the "img-fluid" class to make the image responsive -->
+          <img
+            class="img-fluid"
+            src="/Bootstrap/Museum-of-Candy/Assets/milk.png"
+            alt=""
+          />
+        </div>
+
+        <!-- This is the column that holds the text -->
+        <div class="col-md-6 text-cente rorder-1 order-md-2">
+          <!-- A row within the div needed to be created to properly align the items in the fashion that was needed.  The content has been justified to the center to align the items horizontally -->
+          <div class="row justify-content-center">
+            <!-- another column is created but a bit larger to take up more space horizontally with the padding on the top and bottom increased and a custom class called 'blurb' added for custom colors and shadows -->
+            <div class="col-8 text-center py-5 blurb">
+              <!-- The title of the text section is set to all uppercase using "text-uppercase" and is thinned out using "fw-lighter" a bit of bottom margin was added on small screens to seperate content a little bit more and on medium and up screens it is reduced to 0 -->
+              <h2 class="text-uppercase fw-lighter mb-3 mb-md-0">museum of candy</h3>
+                <!-- Another "img-fluid" for responsiveness.  This image does not show up on small screens but anything medium and above will show it and it will have an inline-flex display -->
+              <img
+                id="lolli"
+                class="img-fluid d-none d-md-inline-flex"
+                src="/Bootstrap/Museum-of-Candy/Assets/lolli_icon.png"
+                alt=""
+              />
+              <!-- This tag was given the lead class to make it POP a little more -->
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorum modi vitae eligendi quis soluta sapiente quia,
+                molestiae eius ipsum necessitatibus numquam iure, ut
+                reiciendis ratione pariatur dolore corporis totam
+                recusandae?
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+                <!-- As above so below.  These sections are fashioned just like the one directly above this comment.  The only difference is the order.  For the pictures to alternate sides along with the text the orders have to switch from 2 to 1 each time a new row is created.  The same with the medium and up version -->
+      <div class="row align-items-center content mb-md-5">
+        <div class="col-md-6 order-1 order-md-2">
+          <img
+            class="img-fluid"
+            src="/Bootstrap/Museum-of-Candy/Assets/gumball.png"
+            alt=""
+          />
+        </div>
+        <div class="col-md-6 text-centerorder-2 order-md-1">
+          <div class="row justify-content-center">
+            <div class="col-8 text-center py-5 blurb">
+              <h2 class="text-uppercase fw-lighter mb-3 mb-md-0">museum of candy</h3>
+              <img
+                id="lolli"
+                class="img-fluid d-none d-md-inline-flex"
+                src="/Bootstrap/Museum-of-Candy/Assets/lolli_icon.png"
+                alt=""
+              />
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorum modi vitae eligendi quis soluta sapiente quia,
+                molestiae eius ipsum necessitatibus numquam iure, ut
+                reiciendis ratione pariatur dolore corporis totam
+                recusandae?
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center content">
+        <div class="col-md-6 order-2 order-md-1">
+          <img
+            class="img-fluid"
+            src="/Bootstrap/Museum-of-Candy/Assets/sprinkles.png"
+            alt=""
+          />
+        </div>
+        <div class="col-md-6 text-centerorder-1 order-md-2">
+          <div class="row justify-content-center">
+            <div class="col-8 text-center py-5 blurb">
+              <h2 class="text-uppercase fw-lighter mb-3 mb-md-0">museum of candy</h3>
+              <img
+                id="lolli"
+                class="img-fluid d-none d-md-inline-flex"
+                src="/Bootstrap/Museum-of-Candy/Assets/lolli_icon.png"
+                alt=""
+              />
+              <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Dolorum modi vitae eligendi quis soluta sapiente quia,
+                molestiae eius ipsum necessitatibus numquam iure, ut
+                reiciendis ratione pariatur dolore corporis totam
+                recusandae?
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+      
+    </section>
+    </main>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(function () {
+        $(document).scroll(function(){
+          var $nav = $("#mainNavbar");
+          $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+        });
+      });
+    </script>
+  </body>
+</html>
